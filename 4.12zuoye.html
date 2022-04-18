@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             <title>killlaa</title>
+            <meta name="author" content="killlaa">
+            <meta http-equiv="refresh" content="30">
+     
+            input{
+                width: 500px ;
+               
+            }
+            body{
+                background-image : url("海绵.jpg");
+              
+            }
+            input[type=text]{
+                -webkit-transition: width 0.2s ease-in-out;
+                transition: width 0.2s ease-in-out;
+            }
+            input[type=text]:focus{
+                width: 400%;
+            }
+            .two{
+                position: fixed;
+                left: 30%;
+                top: 45%;
+            }
+            .search{
+                width: 500px;
+                height: 40px;
+                border-radius: 25px;
+            }
+            .yy{
+                width: 55px;
+                height: 40px;
+                color: rgb(239, 243, 241);
+                background-color: rgb(179, 25, 199);
+                border-radius: 25px;
+                position: fixed;
+            }
+            }
+            #nav ul{
+                width:30%;
+                height:50px;
+                margin: 0;
+                padding:0;
+                padding-left: 0px;
+                list-style: none;
+                overflow: hidden;
+                background-color: rgb(150, 204, 243);
+                top: 0%;
+                color: aliceblue;
+
+            }
+            #nav ul li{
+                text-align: center;
+                font: 16px/2.5;
+                display:inline-block;
+                border-right:1px solid ;
+                line-height: 20px;
+                border-bottom: 1px solid ;
+                border-top: 1px solid;
+                border-left: 1px solid;
+                background-color:rgb(179, 25, 199); 
+                border-radius: 10px;
+                width: 100px;
+            }
+            #nav ul li a{
+                color: rgb(247, 245, 253);
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+            }
+            #nav li a:hover{
+                color: rgb(56, 220, 110);
+            }
+            .nav1{
+                position: relative;
+                display: inline-block;
+                text-decoration: ;
+                list-style: none;
+                border-right: 1px solid;
+                border-bottom: 1px solid;
+                font: 16px/2.5;
+                border-left: 1px solid;
+                border-top: 1px solid;
+                background-color: rgb(179, 25, 199);
+                border-radius: 10px;
+                width: 100px;
+            }
+            .nav2{
+                display: none;
+                position: absolute;
+                min-width: 81px;
+                border-radius: 10px;
+                list-style: none;
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+                border-left: 1px solid;
+                border-right: 1px solid;
+                width: 100px;
+            }
+            .nav1 a {
+                color: aliceblue;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+            }
+            .nav2 a {
+                color: black;
+                padding: 12px 16px;
+                display: block;
+
+            }
+            .nav2 a:hover{
+                background-color:  rgb(37, 171, 39);
+                border-radius: 10px;
+            }
+            .nav1:hover .nav2{
+                display: block;
+            }
+            .nav1:hover,li:hover{
+                background-color: rgb(37, 171, 39);
+            }
+            <title>killlaa</title>
+            <meta name="author" content="killlaa">
+            <meta http-equiv="refresh" content="30">
+           
+        </style>
+    </head>
+    <body>
+        <div id="nav">
+            <ul>
+            <li><a href="#">text</a></li>
+            <li><a href="#">picture</a></li> 
+            <li><a href="#">video</a></li>
+           <div class="nav1">
+               <a href="#" class="ct">more</a>
+               <div class="nav2">
+                   <a href="#">map</a>
+                   <a href="#">news</a>
+               </div>
+           </div>
+            </ul>
+        </div>
+        <div class="two">
+            <form action="" class="parent">
+               <input type="text" class="search" placeholder="输入你想搜索的内容">
+               <input type="button" value="搜索" class="yy">
+            </form>
+        </div>
+
+    </body>
+</html>
