@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>计时</title>
+        <meta name="author" content="killlaa">
+        <style>
+            body{
+                font-size: large;
+                margin: 0 auto;
+                text-align: center;
+            }
+            button{
+               width:100px;
+               height: 30px;
+               border: 10px;
+               text-align: center;
+               position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <button type="button" onclick="Timing()" id="start">计时开始</button>
+        <p> Time Passed : <span id="counter" style="color: brown;">0</span> s</p>
+        <script>
+          const buttonElement = document.querySelector("button");
+          const counterElement = document.getElementById("counter");
+          let intervalId=null;
+          let started = false;
+          buttonElement,addEventListener("click", () => {
+              if(!started){
+                  intervalId=setInterval(() => {
+                      counterElement.textContent = String(Number(counterElement.textContent) + 1);
+                  }, 1000);
+                  buttonElement.textContent = "暂停计时";
+              }
+              else{
+                  clearInterval(intervalId);
+                  buttonElement.textContent="继续计时";
+              }
+              started=!started;
+          })
+                
+        </script>
+    </body>
+</html>
